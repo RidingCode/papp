@@ -7,7 +7,17 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  methods: {
+    runincre () {
+      this.$store.commit('increment')
+    }
+  },
+  mounted () {
+    console.log(this.$store.state.count)
+    this.runincre()
+    console.log(this.$store.state.count)
+  }
 }
 </script>
 
