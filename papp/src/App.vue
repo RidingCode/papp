@@ -16,6 +16,7 @@ export default {
   mounted () {
     console.log(this.$store.state.count)
     this.runincre()
+    
     console.log(this.$store.state.count)
   }
 }
