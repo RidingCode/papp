@@ -90,6 +90,18 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  methods: {
+    showThis () {
+      console.log(this)
+    },
+    changeMsg () {
+      this.$data.msg = this.$store.state.FooterNavTab
+    }
+  },
+  mounted () {
+    this.showThis()
+    this.changeMsg()
   }
 }
 </script>
